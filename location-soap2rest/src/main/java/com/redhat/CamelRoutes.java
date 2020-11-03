@@ -20,8 +20,6 @@ public class CamelRoutes extends RouteBuilder {
 	@Override
 	public void configure() throws Exception {
 		
-		
-		
 		restConfiguration()
 			.component("undertow")
 	    	.port(8080)
@@ -31,15 +29,10 @@ public class CamelRoutes extends RouteBuilder {
 	    	.enableCORS(true)
 	    	.apiContextPath("/api-doc")
 	    	.apiProperty("api.title", "Location API")
-	    	.apiProperty("api.version", "1.0.0")
-	    ;
+			.apiProperty("api.version", "1.0.0");
+			
+		// PUT YOUR CODE HERE
 		
 		
-	
-		
-	
 	}
-	
-	
-
 }
